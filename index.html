@@ -18,6 +18,8 @@
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
         crossorigin="anonymous"></script>
 
+    <script src="../proyectoPagina/js/animateprogress.js"></script>
+
     <link rel="stylesheet" href="css/main.css">
 
     <div class="header">
@@ -64,7 +66,15 @@
     <section class="micarrera">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-"></div>
+                <div class="col-2"></div>
+                <div class="col-8">
+                    <h2 class="perfiltitulo">Mi carrera ITM en la Universidad de Costa Rica</h2>
+                    <p class="parrafo">Esta carrera nace para cubrir el desarrollo de las aplicaciones multimedia, que en los últimos años ha despuntado. 
+                        Formamos profesionales con un amplio sentido del arte, capaces de comunicar sus ideas a los usuarios finales y con 
+                        amplios conocimientos en redes, bases de datos, diseño gráfico, animación y programación, entre otros. 
+                        El estudiantado que ingrese no necesita tener conocimientos previos en ninguna de las áreas en las que se enfoca el programa.</p>
+                </div>
+                <div class="col-2"></div>
             </div>
         </div>
     </section>
@@ -72,7 +82,14 @@
     <section class="frontend">
             <div class="container-fluid">
                     <div class="row">
-                        <div class="col-"></div>
+                        <div class="col-2"></div>
+                        <div class="col-8">
+                            <h2 class="perfiltitulo">Front-End Developer</h2>
+                            <p class="parrafo">Me defino como desarrollador Front-End Developer por los conocimientos que poseo en la maquetación 
+                                con HTML, y agregado de un estilo atractivo con CSS y la funcionalidad y dinamismo que ofrece JS, con el cual he 
+                                trabajo en mi carrera en proyectos y clases.</p>
+                        </div>
+                        <div class="col-2"></div>
                     </div>
                 </div>
     </section>
@@ -80,7 +97,33 @@
     <section class="habilidades">
             <div class="container-fluid">
                     <div class="row">
-                        <div class="col-"></div>
+                        <div class="col-1"></div>
+                        <div class="col-10">
+                            <h2 class="perfiltitulo">Habilidades</h2>
+                            <div class="row">
+                                <div class="column">
+                                        <img id="imagenp" src="../proyectoPagina/imgs/logo/htmllogo.png">
+                                </div>
+                            
+                                <div class="column">
+                                        <img id="imagenp1" src="../proyectoPagina/imgs/logo/css3.png">
+                                </div>
+                            
+                                <div class="column">
+                                        <img id="imagenp" src="../proyectoPagina/imgs/logo/js.png">
+                                </div>
+                            
+                                <div class="column">
+                                        <img id="imagenp" src="../proyectoPagina/imgs/logo/wordpress.png">
+                                </div>
+                            
+                                <div class="column">
+                                        <img id="imagenp" src="../proyectoPagina/imgs/logo/drupal8.png">
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-1"></div>
                     </div>
                 </div>
     </section>
@@ -88,7 +131,51 @@
     <section class="lenguaje">
             <div class="container-fluid">
                     <div class="row">
-                        <div class="col-"></div>
+                        <div class="col-12">
+                            <h2 class="perfiltitulo">Lenguajes</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-2"></div>
+                        <div class="col-3">
+                            <h3 class="idioma">Español</h3>
+
+                            <div class="progress">
+                                <progress id="espanol" max="100" value="99"></progress>
+                                <span></span>
+                            </div>
+                            <h3 class="porcentaje">100%</h3>
+
+                            <script type="text/javascript">
+                                window.onload = function(){
+                                    animateprogress("espanol",100);
+                                }
+                                document.querySelector("#boton").addEventListener("click", function(){
+                                    animateprogress("#espanol",100);
+                                });
+                            </script>
+
+                        </div>
+                        <div class="col-2"></div>
+                        <div class="col-3">
+                            <h3 class="idioma">Ingles</h3>
+
+                            <div class="progress">
+                                    <progress id="ingles" max="100" value="50"></progress>
+                                    <span></span>
+                            </div>
+                            <h3 class="porcentaje">50%</h3>
+    
+                                <script type="text/javascript">
+                                    window.onload = function(){
+                                        animateprogress("ingles",100);
+                                    }
+                                    document.querySelector("#boton").addEventListener("click", function(){
+                                        animateprogress("#ingles",100);
+                                    });
+                                </script>
+                        </div>
+                        <div class="col-2"></div>
                     </div>
                 </div>
     </section>
@@ -96,7 +183,23 @@
 </body>
 
 <footer class="footer">
-    <h1>Texto de prueba</h1>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-4 primer">
+                <h4>
+                    <a id="itemfooter" href="#educacion">Educación</a>
+                </h4>
+                <h4>
+                    <a id="itemfooter" href="#trabajos">Trabajos</a>
+                </h4>
+                <h4>
+                    <a id="itemfooter" href="#contacto">Contacto</a>
+                </h4>
+            </div>
+            <div class="col-4 segundo"></div>
+            <div class="col-4 tercero"></div>
+        </div>
+    </div>
 </footer>
 
 </html>
