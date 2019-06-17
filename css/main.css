@@ -2,6 +2,113 @@
   Carnet: B64750
   Proyecto: PaginaPersonal*/
 
+/*Cuerpo de la pagina*/  
+
 body{
-    background-color: blue;
+    background-color: white;
+}
+
+/*Header o menu de la pagina*/
+
+.header{
+  overflow: hidden;
+  background-color: #48E25D;
+  padding: 20px 10px;
+}
+
+.header a{
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+.header a.logo{
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.header a:hover{
+  background-color: white;
+  color: #48E25D;
+}
+
+.header-right{
+  float: right;
+  font-weight: bold;
+}
+
+#itemmenu{
+  margin-right: 50px;
+}
+
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .header-right {
+    float: none;
+  }
+}
+
+/*Primera seccion*/
+
+.portada{
+  background-image: url(../imgs/index/Rectángulo.png);
+  height: 100%;
+  width: auto;
+  opacity: 10%;
+}
+
+#foto{
+  padding-top: 5%;
+  padding-bottom: 2%;
+
+}
+
+.nombre{
+  text-align: center;
+  font-weight: bold;
+  color: white;
+}
+
+.titulo{
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  padding-bottom: 5%;
+}
+
+/*Segunda seccion*/
+
+.perfil{
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.perfiltitulo{
+  font-weight: bold;
+  color: black;
+  text-align: center;
+}
+
+.parrafo{
+  text-align: center;
+}
+
+/*Tercera seccion*/
+/*Cuarta seccion*/
+/*Quinta seccion*/
+/*Sexta seccion*/
+
+/*Footer de la pagina*/
+
+.footer{
+  background-color: #3D443E;
 }
